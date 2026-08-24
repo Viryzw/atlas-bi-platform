@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="智能 BI 数据洞察与报告生成平台" />
+    <meta name="theme-color" content="#111827" />
+    <title>Atlas BI · 智能数据洞察平台</title>
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body>
+    <div id="app" class="app-shell">
+      <aside class="sidebar" id="sidebar" aria-label="主导航">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">A</div>
+          <div class="brand-copy">
+            <strong>Atlas BI</strong>
+            <span>智能经营分析</span>
+          </div>
+        </div>
+
+        <nav class="nav-list">
+          <p class="nav-label">工作台</p>
+          <button class="nav-item active" type="button" data-view="dashboard">
+            <span class="nav-icon">⌂</span><span>经营驾驶舱</span>
+          </button>
+          <button class="nav-item" type="button" data-view="chat">
+            <span class="nav-icon">✦</span><span>智能问数</span>
+          </button>
+          <button class="nav-item" type="button" data-view="history">
+            <span class="nav-icon">◷</span><span>问数历史</span>
+          </button>
+          <button class="nav-item" type="button" data-view="reports">
+            <span class="nav-icon">▤</span><span>分析报告</span>
+          </button>
+
+          <p class="nav-label">数据治理</p>
+          <button class="nav-item" type="button" data-view="enterprises">
+            <span class="nav-icon">▣</span><span>企业管理</span>
+          </button>
+          <button class="nav-item" type="button" data-view="departments">
+            <span class="nav-icon">◫</span><span>部门管理</span>
+          </button>
+          <button class="nav-item" type="button" data-view="metrics">
+            <span class="nav-icon">◇</span><span>指标知识库</span>
+          </button>
+          <button class="nav-item" type="button" data-view="datasources">
+            <span class="nav-icon">⌘</span><span>数据源管理</span>
+          </button>
+          <button class="nav-item" type="button" data-view="users" data-admin-only hidden>
+            <span class="nav-icon">◎</span><span>用户管理</span>
+          </button>
+        </nav>
+
+        <div class="sidebar-footer">
+          <div class="workspace-avatar">数</div>
+          <div>
+            <strong id="workspace-enterprise-name">未配置企业</strong>
+            <span>经营分析空间</span>
+          </div>
+          <button class="icon-button" type="button" aria-label="空间设置">⋯</button>
+        </div>
+      </aside>
+
+      <div class="main-column">
+        <header class="topbar">
+          <button class="mobile-menu icon-button" id="mobile-menu" type="button" aria-label="打开导航">☰</button>
+          <div class="topbar-title">
+            <span class="eyebrow">智能 BI 数据洞察平台</span>
+            <strong id="page-title">经营驾驶舱</strong>
+          </div>
+          <div class="topbar-actions">
+            <div class="backend-status is-checking" id="backend-status" role="status">
+              <span class="status-dot"></span>
+              <span class="status-text">正在检查服务</span>
+            </div>
+            <button class="icon-button help-button" type="button" aria-label="帮助">?</button>
+            <div class="user-avatar" aria-label="当前用户：数据分析师">WA</div>
+            <button class="button small" id="logout-button" type="button" hidden>退出</button>
+          </div>
+        </header>
+
+        <main class="content" id="view-root" tabindex="-1"></main>
+      </div>
+    </div>
+
+    <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+    <div class="toast-layer" id="toast-layer" aria-live="polite"></div>
+    <div class="modal-layer" id="modal-layer" aria-hidden="true"></div>
+
+    <script src="/assets/vendor/echarts.min.js"></script>
+    <script src="/assets/vendor/exceljs.min.js"></script>
+    <script type="module" src="/assets/app.js?v=20260822"></script>
+  </body>
+</html>
