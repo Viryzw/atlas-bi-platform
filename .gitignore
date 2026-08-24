@@ -1,0 +1,103 @@
+# Operating-system metadata
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+
+# IDE and editor state
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Python bytecode and interpreter caches
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+
+# Python test, lint and type-check caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.hypothesis/
+.tox/
+.nox/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Python environments and build output
+.venv/
+venv/
+env/
+ENV/
+.conda/
+build/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+*.egg-info/
+*.egg
+MANIFEST
+
+# Local environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Node.js and Vite caches/builds
+node_modules/
+.npm/
+.pnpm-store/
+.yarn/cache/
+.yarn/unplugged/
+.vite/
+dist/
+coverage/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Atlas BI generated RAG indexes and damaged-index backups
+backend/chroma_db/
+backend/chroma_db.broken-*/
+
+# Downloaded local embedding models (configure EMBEDDING_MODEL_PATH per host)
+backend/models/
+
+# Runtime databases, logs, process files and temporary uploads
+*.db
+*.sqlite
+*.sqlite3
+*.log
+*.pid
+*.pid.lock
+*.tmp
+*.temp
+*.cache
+logs/
+tmp/
+temp/
+uploads/
+
+# Local reports and profiling output
+*.prof
+*.lprof
+.benchmarks/
+
