@@ -42,6 +42,8 @@ conda activate BI
 pip install -r requirements.txt
 ```
 
+（4）模型配置：从 [models]( https://drive.google.com/file/d/12jDw7-7ly_CGxuwz6bLcZNlMXBV0btyG/view?usp=share_link) 下载模型后解压至 `backend/`
+
 ---
 
 ##### 一、启动平台
